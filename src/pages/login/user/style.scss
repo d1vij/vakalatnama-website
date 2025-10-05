@@ -1,0 +1,140 @@
+@use "/src/commons.scss" as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content {
+  width: 75vw;
+}
+
+#plans {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  #free,
+  #paid {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perks {
+    li {
+      margin-bottom: 15px;
+      font-family: $font-2;
+    }
+  }
+
+  .plans-title {
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+}
+
+.container {
+  display: flex;
+  background-color: rebeccapurple;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 17px;
+  background-color: $french-gray;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#f,
+#p {
+  display: none;
+}
+.plan-choice {
+  cursor: pointer;
+  margin-top: 5vh;
+  height: 7vh;
+  width: 10vw;
+  border-radius: 5px;
+  transition:
+    background-color 100ms ease,
+    scale 50ms ease;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-2;
+  background-color: $outer-space;
+  &:hover {
+    scale: 105%;
+  }
+
+  &:has(input[type="radio"]:checked) {
+    background-color: $blue-munsell;
+  }
+}
+
+#info-form {
+  background-color: $french-gray;
+  border-radius: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin-bottom: 35px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.input-label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+.input-feild {
+  width: 50vw;
+  outline: none;
+  font-family: $font-2;
+  font-size: 16px;
+  background-color: $platinum;
+  border-radius: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#consents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5vh;
+  align-items: center;
+  label {
+    cursor: pointer;
+  }
+}
+#register-button {
+  height: 5vh;
+  width: 15vw;
+  background-color: $platinum;
+  font-family: $font-2;
+  font-size: 28px;
+  transition: background-color 100ms ease;
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-munsell;
+  }
+  margin-top: 10px;
+  align-self: center;
+  border-radius: 5px;
+}

@@ -1,0 +1,147 @@
+@import "./commons.scss";
+
+/* HEADER */
+#header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 10px;
+
+  #proj-title {
+    font-size: clamp(20px, 4vw, 32px);
+    font-family: $font-2;
+    text-align: center;
+  }
+
+  #image-container {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    background-color: $paynes-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #profile-icon {
+      height: 70%;
+      width: 70%;
+    }
+  }
+}
+
+/* HERO SECTION */
+#A-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $paynes-gray;
+  padding: 15vh 20px 40px;
+  font-family: $font-1;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+
+  #A-title {
+    color: $platinum;
+    text-shadow: -2px 4px 10px rgba(0, 0, 0, 0.51);
+    font-size: clamp(48px, 10vw, 128px);
+    line-height: 1.1;
+  }
+
+  #A-paragraph {
+    color: $french-gray;
+    font-size: clamp(14px, 2vw, 18px);
+    max-width: 300px;
+  }
+
+  #A-scroll-down {
+    margin-top: 30vh;
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 300;
+  }
+}
+
+/* CONTENT SECTION */
+#B-content-container {
+  font-family: $font-2;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  //align-items: center;
+  margin-top: 10vh;
+  padding: 0 10px;
+  padding-left: 250px;
+}
+
+.B-row {
+  background-color: $platinum;
+  height: auto;
+  max-width: 550px;
+  width: 100%;
+  transition:
+    transform 150ms ease,
+    background-color 200ms ease;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background-color: $blue-munsell;
+  }
+  .B-text {
+  }
+}
+
+.B-title {
+  font-weight: 600;
+  font-size: clamp(18px, 3vw, 26px);
+}
+.B-paragraph {
+  font-size: clamp(14px, 2vw, 16px);
+  margin-top: 5px;
+}
+
+.B-icon {
+  filter: brightness(0);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  #A-title-container {
+    padding-top: 100px;
+  }
+  #A-title {
+    font-size: clamp(36px, 8vw, 80px);
+  }
+}
+
+@media (max-width: 480px) {
+  #A-title-container {
+    margin: 5px;
+    padding: 80px 10px 20px;
+  }
+  #A-title {
+    font-size: clamp(28px, 10vw, 60px);
+  }
+  .B-row {
+    padding: 10px;
+  }
+}
+
+#EMPTY {
+  height: 50px;
+}

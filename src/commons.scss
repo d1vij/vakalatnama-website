@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Color Palette
+$platinum: #dcdcddff;
+$french-gray: #c5c3c6ff;
+$outer-space: #46494cff;
+$paynes-gray: #4c5c68ff;
+$blue-munsell: #1985a1ff;
+
+// Soft Grey-Blue Palette
+$mist-gray:     #e0e1e6ff;
+$ash-gray:      #bfc5caff;
+$slate-gray:    #6b7278ff;
+$charcoal-blue: #3a4450ff;
+$deep-teal:     #1d6c84ff;
+
+$font-1: "Londrina Solid";
+$font-2: "Raleway";
+
+// Dots background colors
+$dot-color: $french-gray;
+$dot-bg: $platinum;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dot-size: 2px;
+  --dot-space: 10px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  font-family: $font-2;
+  overflow-y: scroll;
+  // https://www.reddit.com/r/nextjs/comments/18t0gay/comment/kfaxz9x/
+  background:
+    linear-gradient(
+      90deg,
+      #{$dot-bg} calc(var(--dot-space) - var(--dot-size)),
+      transparent 1%
+    ) center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+      #{$dot-bg} calc(var(--dot-space) - var(--dot-size)),
+      transparent 1%
+    ) center / var(--dot-space) var(--dot-space),
+    #{$dot-color};
+}
+
