@@ -1,0 +1,86 @@
+@use "../../../commons.scss" as * ;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+#container {
+  background-color: $paynes-gray;
+  height: 85vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  border-radius: 5px;
+}
+
+#chat-window {
+  display: flex;
+  height: 79vh; 
+  width: 67vw; 
+  border-radius: 5px;
+  background-color: $platinum;
+  padding: 5px;
+  gap: 5px;
+  font-family: $font-2;
+}
+
+.panes {
+  width: 33%;
+  justify-content: stretch;
+  background-color: $french-gray;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.info-pane {
+  background-color: red;
+  height: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $blue-munsell;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  z-index: 5;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 32px;
+}
+#person-a {
+}
+
+#mediator {
+}
+
+#person-b {
+}
+
+
+.chat{
+  padding: 10px 15px;
+  margin-top: 5px;
+  border-radius: 12px;
+  position: relative;
+  width: 100%;
+  background-color: $ash-gray; 
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.ts {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+
+
+
+

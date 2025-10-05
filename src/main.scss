@@ -35,7 +35,6 @@
   }
 }
 
-/* HERO SECTION */
 #A-title-container {
   display: flex;
   flex-direction: column;
@@ -52,7 +51,7 @@
   #A-title {
     color: $platinum;
     text-shadow: -2px 4px 10px rgba(0, 0, 0, 0.51);
-    font-size: clamp(48px, 10vw, 128px);
+    font-size: clamp(68px, 17vw, 188px);
     line-height: 1.1;
   }
 
@@ -63,7 +62,7 @@
   }
 
   #A-scroll-down {
-    margin-top: 30vh;
+    margin-top: min(30vh, 150px);
     font-size: clamp(14px, 2vw, 18px);
     font-weight: 300;
   }
@@ -72,14 +71,12 @@
 /* CONTENT SECTION */
 #B-content-container {
   font-family: $font-2;
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  //align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   margin-top: 10vh;
-  padding: 0 10px;
-  padding-left: 250px;
+  padding: 0 20px;
 }
 
 .B-row {
@@ -89,19 +86,24 @@
   width: 100%;
   transition:
     transform 150ms ease,
-    background-color 200ms ease;
+    background-color 200ms ease,
+    color 200ms ease;
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 10px;
 
   display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   &:hover {
     transform: scale(1.02);
     cursor: pointer;
     background-color: $blue-munsell;
   }
+
   .B-text {
   }
 }
@@ -110,13 +112,20 @@
   font-weight: 600;
   font-size: clamp(18px, 3vw, 26px);
 }
+
 .B-paragraph {
   font-size: clamp(14px, 2vw, 16px);
   margin-top: 5px;
+  height: fit-content;
 }
 
 .B-icon {
+    filter: brightness(50%);
+  transition: filter 150ms ease, brightness 150ms ease;
+  
+  .B-row:hover & {
   filter: brightness(0);
+  }
 }
 
 /* MEDIA QUERIES */
@@ -126,6 +135,10 @@
   }
   #A-title {
     font-size: clamp(36px, 8vw, 80px);
+  }
+  #B-content-container {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
   }
 }
 
@@ -145,3 +158,4 @@
 #EMPTY {
   height: 50px;
 }
+
