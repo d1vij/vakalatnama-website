@@ -1,80 +1,98 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <script src="./script.ts" type="module"></script>
-  </head>
-  <body>
-    <h1 id="title">VakaalatNama AI</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <script src="./script.ts" type="module"></script>
+    </head>
+    <body>
+        <h1 id="title">VakaalatNama AI</h1>
 
-
-    <div id="chat-window">
-      <div id="chats">
-        <div class="chat user-chat">I am a small farmer, and the land I’ve been cultivating for years has been illegally taken over by a well-known trader in my area. He claims ownership without any legal documents, using his influence to fence off the land and stop me from entering. My name is clearly mentioned in the land records, but the local authorities are hesitant to act because of his status. This land is my family’s only source of income, and I don’t know how to reclaim it or what legal steps I can take to get justice.
-<span class="ts">Sent at 12:36</span></div>
-        <div class="chat ai-chat">Laws the trader may be violating:
-
-Criminal trespass (IPC Sections 441–446): Preventing you from entering your own land.
-
-Fraud (IPC Section 420): Claiming ownership without documents.
-
-Dispossession: Forcibly ousting you from your lawful property.
-
-Laws protecting you:
-
-Land records: Your name in official records proves ownership.
-
-Civil remedies: You can file a recovery of possession suit under the Specific Relief Act, 1963.
-
-Police protection: FIR for trespass and illegal occupation.
-
-Farmer protections: Local land/tenant laws safeguard small farmers from illegal takeover.
-
-Immediate steps:
-
-Collect land documents and evidence (photos, witnesses).
-
-File a civil suit and police complaint.
-
-Approach District Collector or Revenue Officer if local authorities delay.<span class="ts">Recieved at 12:36</span></div>
-      
-            <div id="advocate-contacts">
-               <div class="advocate">
-                    <div class="image-container">
-                        <img src="/src/assets/person.svg" class="advocate-pfp" alt="">
+        <div id="chat-window">
+            <div id="chats">
+                <div class="chat user-chat">
+                    I am a small farmer, and the land I’ve been cultivating for
+                    years has been illegally taken over by a well-known trader
+                    in my area. He claims ownership without any legal documents,
+                    using his influence to fence off the land and stop me from
+                    entering. My name is clearly mentioned in the land records,
+                    but the local authorities are hesitant to act because of his
+                    status. This land is my family’s only source of income, and
+                    I don’t know how to reclaim it or what legal steps I can
+                    take to get justice.
+                    <span class="ts">Sent at 12:36</span>
+                </div>
+                <div class="chat ai-chat">
+                    Laws the trader may be violating: Criminal trespass (IPC
+                    Sections 441–446): Preventing you from entering your own
+                    land. Fraud (IPC Section 420): Claiming ownership without
+                    documents. Dispossession: Forcibly ousting you from your
+                    lawful property. Laws protecting you: Land records: Your
+                    name in official records proves ownership. Civil remedies:
+                    You can file a recovery of possession suit under the
+                    Specific Relief Act, 1963. Police protection: FIR for
+                    trespass and illegal occupation. Farmer protections: Local
+                    land/tenant laws safeguard small farmers from illegal
+                    takeover. Immediate steps: Collect land documents and
+                    evidence (photos, witnesses). File a civil suit and police
+                    complaint. Approach District Collector or Revenue Officer if
+                    local authorities delay.<span class="ts"
+                        >Recieved at 12:36</span
+                    >
+                </div>
+                <div id="advocate-contacts">
+                    <div class="advocate">
+                        <div class="image-container">
+                            <img
+                                src="/src/assets/person.svg"
+                                class="advocate-pfp"
+                                alt=""
+                            />
+                        </div>
+                        <div class="advocate-info">
+                            <p class="advocate-name">Ujjawal Gaur</p>
+                            <p class="advocate-description">
+                                Advocate at the Supreme Court of India
+                            </p>
+                        </div>
                     </div>
-                    <div class="advocate-info">
-                       <p class="advocate-name">Ujjawal Gaur</p>
-                       <p class="advocate-description">Advocate at the Supreme Court of India</p>
+                    <div class="advocate">
+                        <div class="image-container">
+                            <img
+                                src="/src/assets/person.svg"
+                                class="advocate-pfp"
+                                alt=""
+                            />
+                        </div>
+                        <div class="advocate-info">
+                            <p class="advocate-name">Abhichandra Charke</p>
+                            <p class="advocate-description">
+                                5 Years of experience in IPR
+                            </p>
+                        </div>
                     </div>
-               </div>
-               <div class="advocate">
-                    <div class="image-container">
-                        <img src="/src/assets/person.svg" class="advocate-pfp" alt="">
+                    <div class="advocate">
+                        <div class="image-container">
+                            <img
+                                src="/src/assets/person.svg"
+                                class="advocate-pfp"
+                                alt=""
+                            />
+                        </div>
+                        <div class="advocate-info">
+                            <p class="advocate-name">Gauravi Zade</p>
+                            <p class="advocate-description">
+                                7 Years of experience in Criminal Law
+                            </p>
+                        </div>
                     </div>
-                    <div class="advocate-info">
-                       <p class="advocate-name">Abhichandra Charke</p>
-                       <p class="advocate-description">5 Years of experience in IPR</p>
-                    </div>
-               </div>
-               <div class="advocate">
-                    <div class="image-container">
-                        <img src="/src/assets/person.svg" class="advocate-pfp" alt="">
-                    </div>
-                    <div class="advocate-info">
-                       <p class="advocate-name">Gauravi Zade</p>
-                       <p class="advocate-description">7 Years of experience in Criminal Law</p>
-                    </div>
-               </div>
+                </div>
+            </div>
+            <div id="input-window">
+                <input type="text" id="input-field" name="" value="" />
+                <img src="/src/assets/mic.svg" id="mic-icon" alt="" />
             </div>
         </div>
-      </div>
-      <div id="input-window">
-        <input type="text" id="input-field" name="" value="" />
-        <img src="/src/assets/mic.svg" id="mic-icon" alt="" />
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

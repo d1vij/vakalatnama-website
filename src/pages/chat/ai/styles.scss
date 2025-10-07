@@ -1,164 +1,157 @@
 @use "../../../commons.scss" as *;
 
-
-
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
 
 #title {
-  position: absolute;
-  top: 5px;
-  font-family: $font-1;
-  text-shadow: -2px 4px 10px rgba(0, 0, 0, 0.51);
-  color: $charcoal-blue;
+    position: absolute;
+    top: 5px;
+    font-family: $font-1;
+    text-shadow: -2px 4px 10px rgba(0, 0, 0, 0.51);
+    color: $charcoal-blue;
 }
-
 
 #chat-window {
-  padding: 3vh;
-  background-color: $paynes-gray;
-  border-radius: 5px;
-  height: 85vh;
-  width: 70vw;
-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 3vh;
+    background-color: $paynes-gray;
+    border-radius: 5px;
+    height: 85vh;
+    width: 70vw;
+    z-index: 9;
+    box-shadow:
+        rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 #chats {
-  background-color: $mist-gray;
-  border-radius: 5px;
-  height: 73vh;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  display: grid;
-
+    background-color: $mist-gray;
+    border-radius: 5px;
+    height: 73vh;
+    box-shadow:
+        rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: grid;
 }
 
 #chats {
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-              rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  height: 70vh;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 10px;
+    border-radius: 5px;
+    box-shadow:
+        rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: 70vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
 }
 
-.chat{
-  padding: 10px 15px;
-  border-radius: 12px;
-  position: relative;
-  width: 50ch;
+.chat {
+    padding: 10px 15px;
+    border-radius: 12px;
+    position: relative;
+    width: 50ch;
 }
 
 .user-chat {
-  align-self: flex-end;
-  background-color: $french-gray;
+    align-self: flex-end;
+    background-color: $french-gray;
 }
 
 .ai-chat {
-  align-self: flex-start;
-  background-color: $blue-munsell;
+    align-self: flex-start;
+    background-color: $blue-munsell;
 }
 .ts {
-  font-size: 12px;
-  font-weight: 600;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }
 // DUMMY ADVOCATES
 
 #advocate-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .advocate {
-  background-color: $platinum;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 5px;
+    background-color: $platinum;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
 
-  cursor: pointer;
-  transition: scale 100ms ease;
+    cursor: pointer;
+    transition: scale 100ms ease;
 
-  &:hover {
-    scale: 101%;
-  }
-
-
+    &:hover {
+        scale: 101%;
+    }
 }
 
 .image-container {
-background-color: rebeccapurple;
-  border-radius: 100%;
-  height: 35px;
-  width: 35px;
-  display: flex;
-  padding: 2px;
-
+    background-color: rebeccapurple;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    padding: 2px;
 }
 
 .advocate-pfp {
-
 }
 
 .advocate-info {
-
-
-
 }
 
 .advocate-name {
-  font-size: 20px;
-  font-weight: 600;
-
-
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .advocate-description {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 //
 
 #input-window {
-  margin-top: 2vh;
-  background-color: $mist-gray ;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 1vw;
-  padding-bottom: 2px;
-  padding-top: 2px;
-  height: 5ch;
+    margin-top: 2vh;
+    background-color: $mist-gray;
+    box-shadow:
+        rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1vw;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    height: 5ch;
 }
 
 #input-field {
-  background-color: inherit;
-  height: 100%;
-  font-family: $font-2;
-  font-size: 18px;
-  width: 250ch;
-  
-  &:focus {
-    outline: none;
-  }
+    background-color: inherit;
+    height: 100%;
+    font-family: $font-2;
+    font-size: 18px;
+    width: 250ch;
 
+    &:focus {
+        outline: none;
+    }
 }
 
 #mic-icon {
-  filter: brightness(0);
-  cursor: pointer;
+    filter: brightness(0);
+    cursor: pointer;
 }
-
