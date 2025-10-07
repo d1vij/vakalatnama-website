@@ -23,50 +23,50 @@ chatF.classList.add("hidden");
 let userInputs = 0;
 inputBox.disabled = false;
 
-inputBox.addEventListener("keypress", async (event)=>{
-    if(event.key === "Enter") {
-        event.preventDefault();
-        inputBox.disabled = true;
-        inputBox.value = "";
-        switch(userInputs++) {
-            case 0: {
-                chatX.classList.remove("hidden");
-                chatsContainer.scrollTop = chatsContainer.scrollHeight;
-                await pause(1000);
+inputBox.addEventListener("keypress", async (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    inputBox.disabled = true;
+    inputBox.value = "";
+    switch (userInputs++) {
+      case 0: {
+        chatX.classList.remove("hidden");
+        chatsContainer.scrollTop = chatsContainer.scrollHeight;
+        await pause(1000);
 
-                chatB.classList.remove("hidden");
-                chatsContainer.scrollTop = chatsContainer.scrollHeight;
-                await pause(1000);
-                
-                chatC.classList.remove("hidden");
-                chatsContainer.scrollTop = chatsContainer.scrollHeight;
-                break;
-            }
-            case 1: {
-                chatD.classList.remove("hidden");
-                chatsContainer.scrollTop = chatsContainer.scrollHeight;
-                await pause(1000);
+        chatB.classList.remove("hidden");
+        chatsContainer.scrollTop = chatsContainer.scrollHeight;
+        await pause(1000);
 
-                chatE.classList.remove("hidden");
-                chatsContainer.scrollTop = chatsContainer.scrollHeight;
-                await pause(1500);
-                
-                chatF.classList.remove("hidden");
-                chatsContainer.scrollTop = chatsContainer.scrollHeight;
-                break;
-            }
-            default: {
-                return;
-            }
-        }
-        inputBox.disabled = false;
-        inputBox.focus();
+        chatC.classList.remove("hidden");
+        chatsContainer.scrollTop = chatsContainer.scrollHeight;
+        break;
+      }
+      case 1: {
+        chatD.classList.remove("hidden");
+        chatsContainer.scrollTop = chatsContainer.scrollHeight;
+        await pause(1000);
+
+        chatE.classList.remove("hidden");
+        chatsContainer.scrollTop = chatsContainer.scrollHeight;
+        await pause(1500);
+
+        chatF.classList.remove("hidden");
+        chatsContainer.scrollTop = chatsContainer.scrollHeight;
+        break;
+      }
+      default: {
+        return;
+      }
     }
-})
-
-async function main(){
-    await pause(500);
-    chatA.classList.remove("hidden");
+    inputBox.disabled = false;
     inputBox.focus();
+  }
+});
+
+async function main() {
+  await pause(500);
+  chatA.classList.remove("hidden");
+  inputBox.focus();
 }
-main().catch(console.log)
+main().catch(console.log);
