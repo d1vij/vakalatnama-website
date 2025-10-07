@@ -6,7 +6,6 @@ $text-color: $font-color-primary;
   color: $font-color-primary;
 }
 
-
 body {
   display: flex;
   flex-direction: column;
@@ -83,7 +82,7 @@ body {
   display: none;
 }
 
-#plans-link { 
+#plans-link {
   text-decoration: none;
 }
 .redirect-button {
@@ -115,7 +114,6 @@ body {
     color: $color-background-base;
     scale: 105%;
   }
-
 }
 
 #info-form {
@@ -155,24 +153,22 @@ body {
   flex-direction: column;
   width: 100%;
   margin-top: 5vh;
-  
+
   position: relative;
   left: 33%;
-  
+
   gap: 5px;
   label {
     cursor: pointer;
   }
- 
+
   input[type="checkbox"] {
     transform: scale(1.5);
-  } 
-
-  #consent-1, #consent-2 {
-
   }
 
-
+  #consent-1,
+  #consent-2 {
+  }
 }
 
 #register-button {

@@ -1,4 +1,4 @@
-@use 'commons.scss' as *;
+@use "commons.scss" as *;
 
 * {
   scroll-behavior: smooth;
@@ -16,7 +16,7 @@ body {
   justify-content: center;
   position: relative;
   padding: 0 10px;
-  background-color: #968C8280;
+  background-color: #968c8280;
   #proj-title {
     font-size: clamp(20px, 4vw, 32px);
     font-family: $font-2;
@@ -49,12 +49,16 @@ body {
   justify-content: center;
   align-items: center;
   background-color: $color-background-dark;
-  padding: 15vh 20px 40px;
+  padding: 9vh 20px 40px;
   font-family: $font-1;
   border-radius: 5px;
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
+
+  #logo {
+    height: 200px;
+  }
 
   #A-title {
     color: $color-primary;
@@ -70,7 +74,7 @@ body {
   }
 
   #A-scroll-down {
-    margin-top: min(30vh, 150px);
+    margin-top: min(5vh, 50px);
     font-size: clamp(14px, 2vw, 18px);
     font-weight: 300;
     color: $color-text-muted;
@@ -106,7 +110,9 @@ body {
   text-decoration: none;
   color: $color-background-light;
   justify-content: space-between;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   &:hover {
     transform: scale(1.02);
     cursor: pointer;
@@ -130,17 +136,19 @@ body {
 }
 
 .B-icon {
-    filter: brightness(50%);
-  transition: filter 150ms ease, brightness 150ms ease;
-  
+  filter: brightness(50%);
+  transition:
+    filter 150ms ease,
+    brightness 150ms ease;
+
   .B-row:hover & {
-  filter: brightness(0);
+    filter: brightness(0);
   }
 }
 
 #footer {
   display: flex;
-  background-color: #968C8280;
+  background-color: #968c8280;
   height: 50px;
   justify-content: center;
   align-items: center;
@@ -156,7 +164,6 @@ body {
     font-weight: 600;
   }
 }
-
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {

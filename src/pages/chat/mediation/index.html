@@ -1,78 +1,75 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <script src="/src/pages/chat/mediation/script.ts" type="module"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <div id="chat-window">
-            <div id="person-a" class="panes">
-                <div class="info-pane">
-                    Party A
-                </div>
+      <div id="chat-window">
+        <div id="person-a" class="panes">
+          <div class="info-pane">Party A</div>
 
-                <!--Chats-->
-                <div class="chat hidden" data-chat="B"  >
-Sure. I paid Party B in advance for a bulk delivery of goods worth ₹80,000, but only half was delivered, and I received no refund for the rest.
-              
-                </div>
+          <!--Chats-->
+          <div class="chat hidden" data-chat="B">
+            Sure. I paid Party B in advance for a bulk delivery of goods worth
+            ₹80,000, but only half was delivered, and I received no refund for
+            the rest.
+          </div>
 
-                <div class="chat hidden" data-chat="E" >
-                   Yes, if Party B refunds ₹40,000 now and the remaining ₹40,000 in two months, I’ll consider it settled. 
-                </div>
+          <div class="chat hidden" data-chat="E">
+            Yes, if Party B refunds ₹40,000 now and the remaining ₹40,000 in two
+            months, I’ll consider it settled.
+          </div>
 
-                <div class="party-accepted hidden" data-chat="H">
-                   Party A agreed.
-                </div>
-            </div>
-
-            <div id="mediator" class="panes">
-                <div class="info-pane">
-                    Mediator
-                </div>
-
-                <!--Chats-->
-                <div class="chat hidden mediator-chat" data-chat="A" >
-                        Thank you both for coming. Let’s start calmly — Party A, could you explain your side of the issue?
-                </div>
-
-                <div class="chat hidden mediator-chat" data-chat="D" >
-                        Alright. Party A, would you be willing to accept a partial refund now and the rest in installments?
-                </div>
-                <div class="chat hidden mediator-chat" data-chat="G" >
-Excellent. I’ll document the settlement terms for both of you. No court, no stress — just a fair resolution.
-                </div>
-
-                <!--Mediator input-->
-                <input type="text" id="input-feild" placeholder="Chat with parties here">
-            </div>
-
-            <div id="person-b" class="panes">
-                <div class="info-pane">
-                    Party B
-                </div>
-
-                <!--Chats-->
-                <div class="chat hidden" data-chat="C" >
-                I understand, but my supplier backed out last minute. I didn’t intend any loss — I just needed time to recover the money.
-                </div>
-                <div class="chat hidden" data-chat="F" >
-                    That’s fair. I agree to make the first transfer this week and the rest by the end of next month.
-                </div>
-
-
-                <div class="party-accepted hidden" data-chat="I">
-                   Party B agreed.
-                </div>
-            </div>
+          <div class="party-accepted hidden" data-chat="H">Party A agreed.</div>
         </div>
+
+        <div id="mediator" class="panes">
+          <div class="info-pane">Mediator</div>
+
+          <!--Chats-->
+          <div class="chat hidden mediator-chat" data-chat="A">
+            Thank you both for coming. Let’s start calmly — Party A, could you
+            explain your side of the issue?
+          </div>
+
+          <div class="chat hidden mediator-chat" data-chat="D">
+            Alright. Party A, would you be willing to accept a partial refund
+            now and the rest in installments?
+          </div>
+          <div class="chat hidden mediator-chat" data-chat="G">
+            Excellent. I’ll document the settlement terms for both of you. No
+            court, no stress — just a fair resolution.
+          </div>
+
+          <!--Mediator input-->
+          <input
+            type="text"
+            id="input-feild"
+            placeholder="Chat with parties here"
+          />
+        </div>
+
+        <div id="person-b" class="panes">
+          <div class="info-pane">Party B</div>
+
+          <!--Chats-->
+          <div class="chat hidden" data-chat="C">
+            I understand, but my supplier backed out last minute. I didn’t
+            intend any loss — I just needed time to recover the money.
+          </div>
+          <div class="chat hidden" data-chat="F">
+            That’s fair. I agree to make the first transfer this week and the
+            rest by the end of next month.
+          </div>
+
+          <div class="party-accepted hidden" data-chat="I">Party B agreed.</div>
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

@@ -3,28 +3,25 @@
 $green: #708993;
 
 // Primary / Accent Colors
-$color-primary: #F1F6F9;      // Deep teal-blue
-$color-secondary: #9BA4B5;    // Dark slate blue-gray
+$color-primary: #f1f6f9; // Deep teal-blue
+$color-secondary: #9ba4b5; // Dark slate blue-gray
 
 // Backgrounds
-$color-background-dark: #212A3E;  // Very dark slate / charcoal
-$color-background-light: #9BA4B5; // Light grey / off-white
+$color-background-dark: #212a3e; // Very dark slate / charcoal
+$color-background-light: #9ba4b5; // Light grey / off-white
 
 // Text / UI Elements
-$color-text-muted: #748D92;   // Muted steel blue / greyish blue
+$color-text-muted: #748d92; // Muted steel blue / greyish blue
 
 $font-color-primary: #222222;
 // Backgrounds
-$color-background-base: #212A31;  // Very dark slate / charcoal
-$color-background-light: #D3D9D4; // Light grey / off-white
+$color-background-base: #212a31; // Very dark slate / charcoal
+$color-background-light: #d3d9d4; // Light grey / off-white
 
-$some-shade-of-blue:#7393B3;
-
-
-
+$some-shade-of-blue: #7393b3;
 
 $color-neutral-medium: #8f939a; // Darker medium grey for secondary text
-$mist-gray:     #d9dbe0; // Darker mist gray
+$mist-gray: #d9dbe0; // Darker mist gray
 // Fonts
 $font-1: "Londrina Solid";
 $font-2: "Raleway";
@@ -32,7 +29,6 @@ $font-2: "Raleway";
 // Dots background colors
 $dot-color: $color-neutral-medium; // Slightly darker than base for contrast
 $dot-bg: $mist-gray; // darker than before
-
 
 * {
   margin: 0;
@@ -55,14 +51,15 @@ body {
   // https://www.reddit.com/r/nextjs/comments/18t0gay/comment/kfaxz9x/
   background:
     linear-gradient(
-      90deg,
-      #{$dot-bg} calc(var(--dot-space) - var(--dot-size)),
-      transparent 1%
-    ) center / var(--dot-space) var(--dot-space),
+        90deg,
+        #{$dot-bg} calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
     linear-gradient(
-      #{$dot-bg} calc(var(--dot-space) - var(--dot-size)),
-      transparent 1%
-    ) center / var(--dot-space) var(--dot-space),
+        #{$dot-bg} calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
     #{$dot-color};
 }
-
