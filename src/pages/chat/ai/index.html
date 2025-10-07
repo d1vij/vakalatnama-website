@@ -11,7 +11,11 @@
 
         <div id="chat-window">
             <div id="chats">
-                <div class="chat user-chat">
+                <div class="chat ai-chat" data-chat="A">
+                    Welcome to ValkaalatNama AI !! I can help you with any (add something here).<br> Ask me anything via text or voice input.
+                    <span class="ts">Sent at 12:36</span>
+                </div>
+                <div class="chat user-chat" data-chat="X">
                     I am a small farmer, and the land I’ve been cultivating for
                     years has been illegally taken over by a well-known trader
                     in my area. He claims ownership without any legal documents,
@@ -23,7 +27,7 @@
                     take to get justice.
                     <span class="ts">Sent at 12:36</span>
                 </div>
-                <div class="chat ai-chat">
+                <div class="chat ai-chat" data-chat="B">
                     Laws the trader may be violating: Criminal trespass (IPC
                     Sections 441–446): Preventing you from entering your own
                     land. Fraud (IPC Section 420): Claiming ownership without
@@ -37,11 +41,19 @@
                     takeover. Immediate steps: Collect land documents and
                     evidence (photos, witnesses). File a civil suit and police
                     complaint. Approach District Collector or Revenue Officer if
-                    local authorities delay.<span class="ts"
-                        >Recieved at 12:36</span
-                    >
+                    local authorities delay.<span class="ts">Recieved at 12:36</span>
                 </div>
-                <div id="advocate-contacts">
+                <div class="chat ai-chat" data-chat="C" >
+                   If you want I can suggest some advocates with similar case-portfolio ??
+                    <span class="ts">Sent at 12:36</span>
+                </div>
+                <div class="chat user-chat" data-chat="D" >
+                    Sure
+                    <span class="ts">Sent at 12:36</span>
+                </div>
+                <div class="chat ai-chat" id="advocate-contacts" data-chat="E"  >
+                   Here are the top rated advocates, add something good here nabhhyaaa
+
                     <div class="advocate">
                         <div class="image-container">
                             <img
@@ -56,8 +68,7 @@
                                 Advocate at the Supreme Court of India
                             </p>
                         </div>
-                    </div>
-                    <div class="advocate">
+                    </div> <div class="advocate">
                         <div class="image-container">
                             <img
                                 src="/src/assets/person.svg"
@@ -88,9 +99,13 @@
                         </div>
                     </div>
                 </div>
+            <div class="chat ai-chat" data-chat="F">
+               Hope this helped you !!
+               <span class="ts">Sent at 12:36</span>
+            </div>
             </div>
             <div id="input-window">
-                <input type="text" id="input-field" name="" value="" />
+                <input type="text" id="input-field" name="" value="" placeholder="Ask me anything"/>
                 <img src="/src/assets/mic.svg" id="mic-icon" alt="" />
             </div>
         </div>
