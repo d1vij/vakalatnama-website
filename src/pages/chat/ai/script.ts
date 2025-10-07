@@ -1,5 +1,5 @@
 import "./styles.scss";
-
+import { pause } from "../../../lib/pause.js";
 const chatsContainer = document.querySelector<HTMLDivElement>("div#chats")!;
 
 const chatA = document.querySelector<HTMLDivElement>("div[data-chat='A']")!;
@@ -63,12 +63,6 @@ inputBox.addEventListener("keypress", async (event)=>{
         inputBox.focus();
     }
 })
-
-function pause(ms:number){
-    return new Promise(resolve => {
-        setTimeout(resolve,ms);
-    })
-}
 
 async function main(){
     await pause(500);

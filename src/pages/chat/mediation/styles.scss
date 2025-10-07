@@ -1,4 +1,9 @@
-@use "../../../commons.scss" as * ;
+@use "/src/commons.scss" as * ;
+
+
+* {
+  color: $font-color-primary;
+}
 
 body {
   display: flex;
@@ -10,9 +15,9 @@ body {
 
 
 #container {
-  background-color: $paynes-gray;
-  height: 85vh;
-  width: 70vw;
+  background-color: $color-background-dark;
+  height: 95vh;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items:  center;
@@ -21,10 +26,10 @@ body {
 
 #chat-window {
   display: flex;
-  height: 79vh; 
-  width: 67vw; 
+  height: 90vh; 
+  width: 78vw; 
   border-radius: 5px;
-  background-color: $platinum;
+  background-color: $color-background-light;
   padding: 5px;
   gap: 5px;
   font-family: $font-2;
@@ -33,17 +38,17 @@ body {
 .panes {
   width: 33%;
   justify-content: stretch;
-  background-color: $french-gray;
+  background-color: $color-secondary;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 5px;
   padding: 5px;
+  position: relative;
 }
 .info-pane {
-  background-color: red;
   height: 50px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: $blue-munsell;
+  border-radius: 5px;
+  background-color: $color-primary;
+  margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   z-index: 5;
   text-align: center;
@@ -56,6 +61,7 @@ body {
 }
 
 #mediator {
+  position: relative;
 }
 
 #person-b {
@@ -68,9 +74,44 @@ body {
   border-radius: 12px;
   position: relative;
   width: 100%;
-  background-color: $ash-gray; 
+  background-color: $some-shade-of-blue; 
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  position: relative;
 }
+
+.mediator-chat {
+  position: relative;
+  background-color: $green;
+}
+#input-feild {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  font-family: $font-2;
+  height: 2em;
+  font-size: 18px; 
+  padding: 5px;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.party-accepted {
+  background-color: $green;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  font-size: 12px;
+  font-weight: 700;
+  width: fit-content;
+  position: absolute;
+  left: 35%;
+  margin-top: 10px;
+}
+
 
 .ts {
   font-size: 12px;
@@ -81,6 +122,8 @@ body {
 }
 
 
-
+.hidden {
+  display: none !important;
+}
 
 
