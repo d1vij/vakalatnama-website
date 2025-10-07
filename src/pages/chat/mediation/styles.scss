@@ -16,8 +16,8 @@ body {
 
 #container {
   background-color: $color-background-dark;
-  height: 95vh;
-  width: 80vw;
+  height: 85vh;
+  width: 70vw;
   display: flex;
   justify-content: center;
   align-items:  center;
@@ -26,8 +26,8 @@ body {
 
 #chat-window {
   display: flex;
-  height: 90vh; 
-  width: 78vw; 
+  height: 80vh; 
+  width: 68vw; 
   border-radius: 5px;
   background-color: $color-background-light;
   padding: 5px;
