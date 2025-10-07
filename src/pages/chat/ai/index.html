@@ -4,15 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title></title>
-      <script type="module" crossorigin src="/sharktank-website/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-      <link rel="stylesheet" crossorigin href="/sharktank-website/assets/chat-ai-DULN32nj.css">
+      <script type="module" crossorigin src="/sharktank-website/assets/chat-ai-6tU1fzuQ.js"></script>
+      <link rel="modulepreload" crossorigin href="/sharktank-website/assets/modulepreload-polyfill-B5Qt9EMX.js">
+      <link rel="stylesheet" crossorigin href="/sharktank-website/assets/chat-ai-C1ytdJsN.css">
     </head>
     <body>
         <h1 id="title">VakaalatNama AI</h1>
 
         <div id="chat-window">
             <div id="chats">
-                <div class="chat user-chat">
+                <div class="chat ai-chat" data-chat="A">
+                    Welcome to ValkaalatNama AI !! I can help you with any (add something here).<br> Ask me anything via text or voice input.
+                    <span class="ts">Sent at 12:36</span>
+                </div>
+                <div class="chat user-chat" data-chat="X">
                     I am a small farmer, and the land I’ve been cultivating for
                     years has been illegally taken over by a well-known trader
                     in my area. He claims ownership without any legal documents,
@@ -24,7 +29,7 @@
                     take to get justice.
                     <span class="ts">Sent at 12:36</span>
                 </div>
-                <div class="chat ai-chat">
+                <div class="chat ai-chat" data-chat="B">
                     Laws the trader may be violating: Criminal trespass (IPC
                     Sections 441–446): Preventing you from entering your own
                     land. Fraud (IPC Section 420): Claiming ownership without
@@ -38,11 +43,19 @@
                     takeover. Immediate steps: Collect land documents and
                     evidence (photos, witnesses). File a civil suit and police
                     complaint. Approach District Collector or Revenue Officer if
-                    local authorities delay.<span class="ts"
-                        >Recieved at 12:36</span
-                    >
+                    local authorities delay.<span class="ts">Recieved at 12:36</span>
                 </div>
-                <div id="advocate-contacts">
+                <div class="chat ai-chat" data-chat="C" >
+                   If you want I can suggest some advocates with similar case-portfolio ??
+                    <span class="ts">Sent at 12:36</span>
+                </div>
+                <div class="chat user-chat" data-chat="D" >
+                    Sure
+                    <span class="ts">Sent at 12:36</span>
+                </div>
+                <div class="chat ai-chat" id="advocate-contacts" data-chat="E"  >
+                   Here are the top rated advocates, add something good here nabhhyaaa
+
                     <div class="advocate">
                         <div class="image-container">
                             <img
@@ -57,8 +70,7 @@
                                 Advocate at the Supreme Court of India
                             </p>
                         </div>
-                    </div>
-                    <div class="advocate">
+                    </div> <div class="advocate">
                         <div class="image-container">
                             <img
                                 src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-480q-66%200-113-47t-47-113q0-66%2047-113t113-47q66%200%20113%2047t47%20113q0%2066-47%20113t-113%2047ZM160-160v-112q0-34%2017.5-62.5T224-378q62-31%20126-46.5T480-440q66%200%20130%2015.5T736-378q29%2015%2046.5%2043.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56%200-111%2013.5T260-306q-9%205-14.5%2014t-5.5%2020v32Zm240-320q33%200%2056.5-23.5T560-640q0-33-23.5-56.5T480-720q-33%200-56.5%2023.5T400-640q0%2033%2023.5%2056.5T480-560Zm0-80Zm0%20400Z'/%3e%3c/svg%3e"
@@ -89,9 +101,13 @@
                         </div>
                     </div>
                 </div>
+            <div class="chat ai-chat" data-chat="F">
+               Hope this helped you !!
+               <span class="ts">Sent at 12:36</span>
+            </div>
             </div>
             <div id="input-window">
-                <input type="text" id="input-field" name="" value="" />
+                <input type="text" id="input-field" name="" value="" placeholder="Ask me anything"/>
                 <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-400q-50%200-85-35t-35-85v-240q0-50%2035-85t85-35q50%200%2085%2035t35%2085v240q0%2050-35%2085t-85%2035Zm0-240Zm-40%20520v-123q-104-14-172-93t-68-184h80q0%2083%2058.5%20141.5T480-320q83%200%20141.5-58.5T680-520h80q0%20105-68%20184t-172%2093v123h-80Zm40-360q17%200%2028.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17%200-28.5%2011.5T440-760v240q0%2017%2011.5%2028.5T480-480Z'/%3e%3c/svg%3e" id="mic-icon" alt="" />
             </div>
         </div>
