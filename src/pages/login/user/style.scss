@@ -83,7 +83,10 @@ body {
   display: none;
 }
 
-.plan-choice {
+#plans-link { 
+  text-decoration: none;
+}
+.redirect-button {
   cursor: pointer;
   margin-top: 5vh;
   height: 7vh;
@@ -97,7 +100,6 @@ body {
   align-items: center;
   justify-content: center;
   font-family: $font-2;
-
   background-color: $color-secondary;
   &:active {
     scale: 105%;
@@ -113,6 +115,7 @@ body {
     color: $color-background-base;
     scale: 105%;
   }
+
 }
 
 #info-form {
