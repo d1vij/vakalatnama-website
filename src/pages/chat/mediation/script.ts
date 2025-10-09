@@ -36,20 +36,20 @@ inputFeild.addEventListener("keypress", async (event) => {
     }
     case 1: {
       chatD.classList.remove("hidden");
-      await pause(1500);
+      await pause(2500);
 
       chatE.classList.remove("hidden");
-      await pause(1500);
+      await pause(3500);
 
       chatF.classList.remove("hidden");
       break;
     }
     case 2: {
       chatG.classList.remove("hidden");
-      await pause(2000);
+      await pause(3000);
 
       chatH.classList.remove("hidden");
-      await pause(1500);
+      await pause(4500);
 
       chatI.classList.remove("hidden");
       break;
