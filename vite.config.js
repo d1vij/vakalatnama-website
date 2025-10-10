@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/sharktank-website/" : "/",
+  base: mode === "production" ? "/vakalatnama-website/" : "/",
   build: {
     rollupOptions: {
       input: {
